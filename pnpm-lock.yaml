@@ -40,7 +40,11 @@ importers:
         specifier: ^11.0.4
         version: 11.0.4
 
-  packages/create: {}
+  packages/create:
+    dependencies:
+      '@inquirer/prompts':
+        specifier: ^7.4.0
+        version: 7.4.0(@types/node@22.13.14)
 
   packages/template-react:
     dependencies:
@@ -78,6 +82,18 @@ importers:
       vite:
         specifier: ^6.2.0
         version: 6.2.3(@types/node@22.13.14)
+
+  packages/utils:
+    dependencies:
+      axios:
+        specifier: ^1.8.4
+        version: 1.8.4
+      fs-extra:
+        specifier: ^11.3.0
+        version: 11.3.0
+      url-join:
+        specifier: ^5.0.0
+        version: 5.0.0
 
 packages:
 
@@ -431,6 +447,127 @@ packages:
     resolution: {integrity: sha1-GGBHPeffoVRnZ0SPMz24DLD/IWE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@humanwhocodes/retry/-/retry-0.4.2.tgz}
     engines: {node: '>=18.18'}
 
+  '@inquirer/checkbox@4.1.4':
+    resolution: {integrity: sha1-MMJDAVZwEmrJXZuUyzf2MdWtP4g=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/checkbox/-/checkbox-4.1.4.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/confirm@5.1.8':
+    resolution: {integrity: sha1-R2ryR2zUhnkF3Kv8qFmNpN1l6SM=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/confirm/-/confirm-5.1.8.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/core@10.1.9':
+    resolution: {integrity: sha1-mrZyotnKYMXUXH+ptj5P6eA4oC4=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/core/-/core-10.1.9.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/editor@4.2.9':
+    resolution: {integrity: sha1-T/DGmzlAQo1FSbcZgDZV164s8tY=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/editor/-/editor-4.2.9.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/expand@4.0.11':
+    resolution: {integrity: sha1-2Jiy0Cje9CBk7uFfNOLAvcShrSw=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/expand/-/expand-4.0.11.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/figures@1.0.11':
+    resolution: {integrity: sha1-R0Tm25Uoj+od6td5VUhZcQqVmiE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/figures/-/figures-1.0.11.tgz}
+    engines: {node: '>=18'}
+
+  '@inquirer/input@4.1.8':
+    resolution: {integrity: sha1-jmN/EWOQTZUXYqurRYRoLa9ISpE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/input/-/input-4.1.8.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/number@3.0.11':
+    resolution: {integrity: sha1-tCt7JOnhkW0mu9x8NohS/bYm+po=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/number/-/number-3.0.11.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/password@4.0.11':
+    resolution: {integrity: sha1-8jpjL7mhjHp84fKsNtlOiqC3Ip4=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/password/-/password-4.0.11.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/prompts@7.4.0':
+    resolution: {integrity: sha1-vZvjg3K+jbda+wR3brDPCWrpgUs=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/prompts/-/prompts-7.4.0.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/rawlist@4.0.11':
+    resolution: {integrity: sha1-KddO6iYHy7PYDqx/ygAR1Rx0xG0=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/rawlist/-/rawlist-4.0.11.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/search@3.0.11':
+    resolution: {integrity: sha1-ZgsYFRaswwbPIdvB09SfZiy32Rc=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/search/-/search-3.0.11.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/select@4.1.0':
+    resolution: {integrity: sha1-6Z9IPLAEwCR87Vl/LGAV8IQiPfs=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/select/-/select-4.1.0.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/type@3.0.5':
+    resolution: {integrity: sha1-/gAgflfV8EDlsY6AnI56vDoq3jo=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@inquirer/type/-/type-3.0.5.tgz}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha1-Tw4GNi4BNi+CPTSPGHKwj2ZtgUI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/@jridgewell/gen-mapping/-/gen-mapping-0.3.8.tgz}
     engines: {node: '>=6.0.0'}
@@ -646,6 +783,10 @@ packages:
     resolution: {integrity: sha1-N2ETQOsiQ+cMxgTK011jJw1IeBs=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/ansi-colors/-/ansi-colors-4.1.3.tgz}
     engines: {node: '>=6'}
 
+  ansi-escapes@4.3.2:
+    resolution: {integrity: sha1-ayKR0dt9mLZSHV8e+kLQ86n+tl4=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/ansi-escapes/-/ansi-escapes-4.3.2.tgz}
+    engines: {node: '>=8'}
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha1-CCyyyJyf6GWaMRpTvWpNxTAdswQ=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/ansi-regex/-/ansi-regex-5.0.1.tgz}
     engines: {node: '>=8'}
@@ -663,6 +804,12 @@ packages:
   array-union@2.1.0:
     resolution: {integrity: sha1-t5hCCtvrHego2ErNii4j0+/oXo0=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/array-union/-/array-union-2.1.0.tgz}
     engines: {node: '>=8'}
+
+  asynckit@0.4.0:
+    resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/asynckit/-/asynckit-0.4.0.tgz}
+
+  axios@1.8.4:
+    resolution: {integrity: sha1-eJkLtLxj0srgcpUtN0g1lQqC9Ec=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/axios/-/axios-1.8.4.tgz}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/balanced-match/-/balanced-match-1.0.2.tgz}
@@ -683,6 +830,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
+  call-bind-apply-helpers@1.0.2:
+    resolution: {integrity: sha1-S1QowiK+mF15w9gmV0edvgtZstY=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz}
+    engines: {node: '>= 0.4'}
+
   callsites@3.1.0:
     resolution: {integrity: sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/callsites/-/callsites-3.1.0.tgz}
     engines: {node: '>=6'}
@@ -701,12 +852,20 @@ packages:
     resolution: {integrity: sha1-QnmmICinsfJi80c/yWBfXiGMWbQ=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/ci-info/-/ci-info-3.9.0.tgz}
     engines: {node: '>=8'}
 
+  cli-width@4.1.0:
+    resolution: {integrity: sha1-QtqsQdPCVO84rYrAN2chMBc2kcU=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/cli-width/-/cli-width-4.1.0.tgz}
+    engines: {node: '>= 12'}
+
   color-convert@2.0.1:
     resolution: {integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/color-convert/-/color-convert-2.0.1.tgz}
     engines: {node: '>=7.0.0'}
 
   color-name@1.1.4:
     resolution: {integrity: sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/color-name/-/color-name-1.1.4.tgz}
+
+  combined-stream@1.0.8:
+    resolution: {integrity: sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/combined-stream/-/combined-stream-1.0.8.tgz}
+    engines: {node: '>= 0.8'}
 
   commander@13.1.0:
     resolution: {integrity: sha1-d2Fn22jHjzjczh+bjXuLmkiKv0Y=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/commander/-/commander-13.1.0.tgz}
@@ -737,6 +896,10 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha1-pvLc5hL63S7x9Rm3NVHxfoUZmDE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/deep-is/-/deep-is-0.1.4.tgz}
 
+  delayed-stream@1.0.0:
+    resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/delayed-stream/-/delayed-stream-1.0.0.tgz}
+    engines: {node: '>=0.4.0'}
+
   detect-indent@6.1.0:
     resolution: {integrity: sha1-WSSF67v2s7GrK+F1yDk9BMoNV+Y=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/detect-indent/-/detect-indent-6.1.0.tgz}
     engines: {node: '>=8'}
@@ -753,12 +916,35 @@ packages:
     resolution: {integrity: sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/dir-glob/-/dir-glob-3.0.1.tgz}
     engines: {node: '>=8'}
 
+  dunder-proto@1.0.1:
+    resolution: {integrity: sha1-165mfh3INIL4tw/Q9u78UNow9Yo=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/dunder-proto/-/dunder-proto-1.0.1.tgz}
+    engines: {node: '>= 0.4'}
+
   electron-to-chromium@1.5.124:
     resolution: {integrity: sha1-NLHWuvjyHZ28uubmf6J25UVUzoE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/electron-to-chromium/-/electron-to-chromium-1.5.124.tgz}
+
+  emoji-regex@8.0.0:
+    resolution: {integrity: sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/emoji-regex/-/emoji-regex-8.0.0.tgz}
 
   enquirer@2.4.1:
     resolution: {integrity: sha1-kzNLP710/HCXsiSrSo+35Av0rlY=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/enquirer/-/enquirer-2.4.1.tgz}
     engines: {node: '>=8.6'}
+
+  es-define-property@1.0.1:
+    resolution: {integrity: sha1-mD6y+aZyTpMD9hrd8BHHLgngsPo=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/es-define-property/-/es-define-property-1.0.1.tgz}
+    engines: {node: '>= 0.4'}
+
+  es-errors@1.3.0:
+    resolution: {integrity: sha1-BfdaJdq5jk+x3NXhRywFRtUFfI8=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/es-errors/-/es-errors-1.3.0.tgz}
+    engines: {node: '>= 0.4'}
+
+  es-object-atoms@1.1.1:
+    resolution: {integrity: sha1-HE8sSDcydZfOadLKGQp/3RcjOME=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/es-object-atoms/-/es-object-atoms-1.1.1.tgz}
+    engines: {node: '>= 0.4'}
+
+  es-set-tostringtag@2.1.0:
+    resolution: {integrity: sha1-8x274MGDsAptJutjJcgQwP0YvU0=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz}
+    engines: {node: '>= 0.4'}
 
   esbuild@0.25.1:
     resolution: {integrity: sha1-oWuNBwtq1IcZNSd72mzP6FLj+i8=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/esbuild/-/esbuild-0.25.1.tgz}
@@ -885,6 +1071,19 @@ packages:
   flatted@3.3.3:
     resolution: {integrity: sha1-Z8j62VRUp8er6/dLt47nSkQCM1g=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/flatted/-/flatted-3.3.3.tgz}
 
+  follow-redirects@1.15.9:
+    resolution: {integrity: sha1-pgT6EORDv5jKlCKNnuvMLoosjuE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/follow-redirects/-/follow-redirects-1.15.9.tgz}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+
+  form-data@4.0.2:
+    resolution: {integrity: sha1-Ncq73TDDznPessQtPI0+2cpReUw=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/form-data/-/form-data-4.0.2.tgz}
+    engines: {node: '>= 6'}
+
   fs-extra@11.3.0:
     resolution: {integrity: sha1-DaztE2u69lpVWjJnGa+TGtx6MU0=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/fs-extra/-/fs-extra-11.3.0.tgz}
     engines: {node: '>=14.14'}
@@ -902,9 +1101,20 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  function-bind@1.1.2:
+    resolution: {integrity: sha1-LALYZNl/PqbIgwxGTL0Rq26rehw=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/function-bind/-/function-bind-1.1.2.tgz}
+
   gensync@1.0.0-beta.2:
     resolution: {integrity: sha1-MqbudsPX9S1GsrGuXZP+qFgKJeA=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/gensync/-/gensync-1.0.0-beta.2.tgz}
     engines: {node: '>=6.9.0'}
+
+  get-intrinsic@1.3.0:
+    resolution: {integrity: sha1-dD8OO2lkqTpUke0b/6rgVNf5jQE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/get-intrinsic/-/get-intrinsic-1.3.0.tgz}
+    engines: {node: '>= 0.4'}
+
+  get-proto@1.0.1:
+    resolution: {integrity: sha1-FQs/J0OGnvPoUewMSdFbHRTQDuE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/get-proto/-/get-proto-1.0.1.tgz}
+    engines: {node: '>= 0.4'}
 
   get-stdin@9.0.0:
     resolution: {integrity: sha1-OYP/guA9VvGy6g0+YDJfOdcDpXU=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/get-stdin/-/get-stdin-9.0.0.tgz}
@@ -937,12 +1147,28 @@ packages:
     resolution: {integrity: sha1-vUvpi7BC+D15b344EZkfvoKg00s=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/globby/-/globby-11.1.0.tgz}
     engines: {node: '>=10'}
 
+  gopd@1.2.0:
+    resolution: {integrity: sha1-ifVrghe9vIgCvSmd9tfxCB1+UaE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/gopd/-/gopd-1.2.0.tgz}
+    engines: {node: '>= 0.4'}
+
   graceful-fs@4.2.11:
     resolution: {integrity: sha1-QYPk6L8Iu24Fu7L30uDI9xLKQOM=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/graceful-fs/-/graceful-fs-4.2.11.tgz}
 
   has-flag@4.0.0:
     resolution: {integrity: sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/has-flag/-/has-flag-4.0.0.tgz}
     engines: {node: '>=8'}
+
+  has-symbols@1.1.0:
+    resolution: {integrity: sha1-/JxqeDoISVHQuXH+EBjegTcHozg=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/has-symbols/-/has-symbols-1.1.0.tgz}
+    engines: {node: '>= 0.4'}
+
+  has-tostringtag@1.0.2:
+    resolution: {integrity: sha1-LNxC1AvvLltO6rfAGnPFTOerWrw=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/has-tostringtag/-/has-tostringtag-1.0.2.tgz}
+    engines: {node: '>= 0.4'}
+
+  hasown@2.0.2:
+    resolution: {integrity: sha1-AD6vkb563DcuhOxZ3DclLO24AAM=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/hasown/-/hasown-2.0.2.tgz}
+    engines: {node: '>= 0.4'}
 
   human-id@4.1.1:
     resolution: {integrity: sha1-KAH71huaXByRcPMygC22QIo5pLA=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/human-id/-/human-id-4.1.1.tgz}
@@ -967,6 +1193,10 @@ packages:
   is-extglob@2.1.1:
     resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/is-extglob/-/is-extglob-2.1.1.tgz}
     engines: {node: '>=0.10.0'}
+
+  is-fullwidth-code-point@3.0.0:
+    resolution: {integrity: sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz}
+    engines: {node: '>=8'}
 
   is-glob@4.0.3:
     resolution: {integrity: sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/is-glob/-/is-glob-4.0.3.tgz}
@@ -1051,6 +1281,10 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha1-CjqWNVKhJmT9VVb1zzpZyerrOxs=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/lru-cache/-/lru-cache-5.1.1.tgz}
 
+  math-intrinsics@1.1.0:
+    resolution: {integrity: sha1-oN10voHiqlwvJ+Zc4oNgXuTit/k=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/math-intrinsics/-/math-intrinsics-1.1.0.tgz}
+    engines: {node: '>= 0.4'}
+
   merge2@1.4.1:
     resolution: {integrity: sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/merge2/-/merge2-1.4.1.tgz}
     engines: {node: '>= 8'}
@@ -1058,6 +1292,14 @@ packages:
   micromatch@4.0.8:
     resolution: {integrity: sha1-1m+hjzpHB2eJMgubGvMr2G2fogI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/micromatch/-/micromatch-4.0.8.tgz}
     engines: {node: '>=8.6'}
+
+  mime-db@1.52.0:
+    resolution: {integrity: sha1-u6vNwChZ9JhzAchW4zh85exDv3A=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/mime-db/-/mime-db-1.52.0.tgz}
+    engines: {node: '>= 0.6'}
+
+  mime-types@2.1.35:
+    resolution: {integrity: sha1-OBqHG2KnNEUGYK497uRIE/cNlZo=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/mime-types/-/mime-types-2.1.35.tgz}
+    engines: {node: '>= 0.6'}
 
   minimatch@3.1.2:
     resolution: {integrity: sha1-Gc0ZS/0+Qo8EmnCBfAONiatL41s=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/minimatch/-/minimatch-3.1.2.tgz}
@@ -1068,6 +1310,10 @@ packages:
 
   ms@2.1.3:
     resolution: {integrity: sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/ms/-/ms-2.1.3.tgz}
+
+  mute-stream@2.0.0:
+    resolution: {integrity: sha1-pURvwMUStxyDxE2QjVx7e0xJOys=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/mute-stream/-/mute-stream-2.0.0.tgz}
+    engines: {node: ^18.17.0 || >=20.5.0}
 
   nanoid@3.3.11:
     resolution: {integrity: sha1-T08RLO++MDIC8hmYOBKJNiZtGFs=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/nanoid/-/nanoid-3.3.11.tgz}
@@ -1184,6 +1430,9 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha1-4QLxbKNVQkhldV0sno6k8k1Yw+I=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/proxy-from-env/-/proxy-from-env-1.1.0.tgz}
+
   punycode@2.3.1:
     resolution: {integrity: sha1-AnQi4vrsCyXhVJw+G9gwm5EztuU=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/punycode/-/punycode-2.3.1.tgz}
     engines: {node: '>=6'}
@@ -1282,6 +1531,10 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/sprintf-js/-/sprintf-js-1.0.3.tgz}
 
+  string-width@4.2.3:
+    resolution: {integrity: sha1-JpxxF9J7Ba0uU2gwqOyJXvnG0BA=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/string-width/-/string-width-4.2.3.tgz}
+    engines: {node: '>=8'}
+
   strip-ansi@6.0.1:
     resolution: {integrity: sha1-nibGPTD1NEPpSJSVshBdN7Z6hdk=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/strip-ansi/-/strip-ansi-6.0.1.tgz}
     engines: {node: '>=8'}
@@ -1325,6 +1578,10 @@ packages:
     resolution: {integrity: sha1-B7ggO/pwVsBlcFDjzNLDdzC6uPE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/type-check/-/type-check-0.4.0.tgz}
     engines: {node: '>= 0.8.0'}
 
+  type-fest@0.21.3:
+    resolution: {integrity: sha1-0mCiSwGYQ24TP6JqUkptZfo7Ljc=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/type-fest/-/type-fest-0.21.3.tgz}
+    engines: {node: '>=10'}
+
   typescript@5.8.2:
     resolution: {integrity: sha1-gXCzcC90t52y5aliB8FeZYB5meQ=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/typescript/-/typescript-5.8.2.tgz}
     engines: {node: '>=14.17'}
@@ -1349,6 +1606,10 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha1-mxpSWVIlhZ5V9mnZKPiMbFfyp34=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/uri-js/-/uri-js-4.4.1.tgz}
+
+  url-join@5.0.0:
+    resolution: {integrity: sha1-wvHly9lfqRCCqTtYofQv7LS9vPE=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/url-join/-/url-join-5.0.0.tgz}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   vite@6.2.3:
     resolution: {integrity: sha1-JJ6S0yiGmBq0a8HwSaxyq8b6geI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/vite/-/vite-6.2.3.tgz}
@@ -1399,12 +1660,20 @@ packages:
     resolution: {integrity: sha1-0sRcbdT7zmIaZvE2y+Mor9BBCzQ=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/word-wrap/-/word-wrap-1.2.5.tgz}
     engines: {node: '>=0.10.0'}
 
+  wrap-ansi@6.2.0:
+    resolution: {integrity: sha1-6Tk7oHEC5skaOyIUePAlfNKFblM=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/wrap-ansi/-/wrap-ansi-6.2.0.tgz}
+    engines: {node: '>=8'}
+
   yallist@3.1.1:
     resolution: {integrity: sha1-27fa+b/YusmrRev2ArjLrQ1dCP0=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/yallist/-/yallist-3.1.1.tgz}
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/yocto-queue/-/yocto-queue-0.1.0.tgz}
     engines: {node: '>=10'}
+
+  yoctocolors-cjs@2.1.2:
+    resolution: {integrity: sha1-9LkFqECjdQaBOnrKoo/r6XdnokI=, tarball: https://jfrog.gopayinc.com.cn:443/artifactory/api/npm/npm-gopay-release/yoctocolors-cjs/-/yoctocolors-cjs-2.1.2.tgz}
+    engines: {node: '>=18'}
 
 snapshots:
 
@@ -1801,6 +2070,122 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
+  '@inquirer/checkbox@4.1.4(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/figures': 1.0.11
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      ansi-escapes: 4.3.2
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/confirm@5.1.8(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/core@10.1.9(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/figures': 1.0.11
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      ansi-escapes: 4.3.2
+      cli-width: 4.1.0
+      mute-stream: 2.0.0
+      signal-exit: 4.1.0
+      wrap-ansi: 6.2.0
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/editor@4.2.9(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      external-editor: 3.1.0
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/expand@4.0.11(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/figures@1.0.11': {}
+
+  '@inquirer/input@4.1.8(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/number@3.0.11(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/password@4.0.11(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      ansi-escapes: 4.3.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/prompts@7.4.0(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/checkbox': 4.1.4(@types/node@22.13.14)
+      '@inquirer/confirm': 5.1.8(@types/node@22.13.14)
+      '@inquirer/editor': 4.2.9(@types/node@22.13.14)
+      '@inquirer/expand': 4.0.11(@types/node@22.13.14)
+      '@inquirer/input': 4.1.8(@types/node@22.13.14)
+      '@inquirer/number': 3.0.11(@types/node@22.13.14)
+      '@inquirer/password': 4.0.11(@types/node@22.13.14)
+      '@inquirer/rawlist': 4.0.11(@types/node@22.13.14)
+      '@inquirer/search': 3.0.11(@types/node@22.13.14)
+      '@inquirer/select': 4.1.0(@types/node@22.13.14)
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/rawlist@4.0.11(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/search@3.0.11(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/figures': 1.0.11
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/select@4.1.0(@types/node@22.13.14)':
+    dependencies:
+      '@inquirer/core': 10.1.9(@types/node@22.13.14)
+      '@inquirer/figures': 1.0.11
+      '@inquirer/type': 3.0.5(@types/node@22.13.14)
+      ansi-escapes: 4.3.2
+      yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 22.13.14
+
+  '@inquirer/type@3.0.5(@types/node@22.13.14)':
+    optionalDependencies:
+      '@types/node': 22.13.14
+
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
       '@jridgewell/set-array': 1.2.1
@@ -1984,6 +2369,10 @@ snapshots:
 
   ansi-colors@4.1.3: {}
 
+  ansi-escapes@4.3.2:
+    dependencies:
+      type-fest: 0.21.3
+
   ansi-regex@5.0.1: {}
 
   ansi-styles@4.3.0:
@@ -1997,6 +2386,16 @@ snapshots:
   argparse@2.0.1: {}
 
   array-union@2.1.0: {}
+
+  asynckit@0.4.0: {}
+
+  axios@1.8.4:
+    dependencies:
+      follow-redirects: 1.15.9
+      form-data: 4.0.2
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
 
   balanced-match@1.0.2: {}
 
@@ -2020,6 +2419,11 @@ snapshots:
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
+  call-bind-apply-helpers@1.0.2:
+    dependencies:
+      es-errors: 1.3.0
+      function-bind: 1.1.2
+
   callsites@3.1.0: {}
 
   caniuse-lite@1.0.30001707: {}
@@ -2033,11 +2437,17 @@ snapshots:
 
   ci-info@3.9.0: {}
 
+  cli-width@4.1.0: {}
+
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  combined-stream@1.0.8:
+    dependencies:
+      delayed-stream: 1.0.0
 
   commander@13.1.0: {}
 
@@ -2059,6 +2469,8 @@ snapshots:
 
   deep-is@0.1.4: {}
 
+  delayed-stream@1.0.0: {}
+
   detect-indent@6.1.0: {}
 
   detect-indent@7.0.1: {}
@@ -2069,12 +2481,35 @@ snapshots:
     dependencies:
       path-type: 4.0.0
 
+  dunder-proto@1.0.1:
+    dependencies:
+      call-bind-apply-helpers: 1.0.2
+      es-errors: 1.3.0
+      gopd: 1.2.0
+
   electron-to-chromium@1.5.124: {}
+
+  emoji-regex@8.0.0: {}
 
   enquirer@2.4.1:
     dependencies:
       ansi-colors: 4.1.3
       strip-ansi: 6.0.1
+
+  es-define-property@1.0.1: {}
+
+  es-errors@1.3.0: {}
+
+  es-object-atoms@1.1.1:
+    dependencies:
+      es-errors: 1.3.0
+
+  es-set-tostringtag@2.1.0:
+    dependencies:
+      es-errors: 1.3.0
+      get-intrinsic: 1.3.0
+      has-tostringtag: 1.0.2
+      hasown: 2.0.2
 
   esbuild@0.25.1:
     optionalDependencies:
@@ -2240,6 +2675,15 @@ snapshots:
 
   flatted@3.3.3: {}
 
+  follow-redirects@1.15.9: {}
+
+  form-data@4.0.2:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      es-set-tostringtag: 2.1.0
+      mime-types: 2.1.35
+
   fs-extra@11.3.0:
     dependencies:
       graceful-fs: 4.2.11
@@ -2261,7 +2705,27 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
+  function-bind@1.1.2: {}
+
   gensync@1.0.0-beta.2: {}
+
+  get-intrinsic@1.3.0:
+    dependencies:
+      call-bind-apply-helpers: 1.0.2
+      es-define-property: 1.0.1
+      es-errors: 1.3.0
+      es-object-atoms: 1.1.1
+      function-bind: 1.1.2
+      get-proto: 1.0.1
+      gopd: 1.2.0
+      has-symbols: 1.1.0
+      hasown: 2.0.2
+      math-intrinsics: 1.1.0
+
+  get-proto@1.0.1:
+    dependencies:
+      dunder-proto: 1.0.1
+      es-object-atoms: 1.1.1
 
   get-stdin@9.0.0: {}
 
@@ -2290,9 +2754,21 @@ snapshots:
       merge2: 1.4.1
       slash: 3.0.0
 
+  gopd@1.2.0: {}
+
   graceful-fs@4.2.11: {}
 
   has-flag@4.0.0: {}
+
+  has-symbols@1.1.0: {}
+
+  has-tostringtag@1.0.2:
+    dependencies:
+      has-symbols: 1.1.0
+
+  hasown@2.0.2:
+    dependencies:
+      function-bind: 1.1.2
 
   human-id@4.1.1: {}
 
@@ -2310,6 +2786,8 @@ snapshots:
   imurmurhash@0.1.4: {}
 
   is-extglob@2.1.1: {}
+
+  is-fullwidth-code-point@3.0.0: {}
 
   is-glob@4.0.3:
     dependencies:
@@ -2383,12 +2861,20 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
+  math-intrinsics@1.1.0: {}
+
   merge2@1.4.1: {}
 
   micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
+
+  mime-db@1.52.0: {}
+
+  mime-types@2.1.35:
+    dependencies:
+      mime-db: 1.52.0
 
   minimatch@3.1.2:
     dependencies:
@@ -2397,6 +2883,8 @@ snapshots:
   mri@1.2.0: {}
 
   ms@2.1.3: {}
+
+  mute-stream@2.0.0: {}
 
   nanoid@3.3.11: {}
 
@@ -2484,6 +2972,8 @@ snapshots:
       prettier: 2.8.8
 
   prettier@2.8.8: {}
+
+  proxy-from-env@1.1.0: {}
 
   punycode@2.3.1: {}
 
@@ -2585,6 +3075,12 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
+  string-width@4.2.3:
+    dependencies:
+      emoji-regex: 8.0.0
+      is-fullwidth-code-point: 3.0.0
+      strip-ansi: 6.0.1
+
   strip-ansi@6.0.1:
     dependencies:
       ansi-regex: 5.0.1
@@ -2623,6 +3119,8 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
+  type-fest@0.21.3: {}
+
   typescript@5.8.2: {}
 
   undici-types@6.20.0: {}
@@ -2641,6 +3139,8 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
+  url-join@5.0.0: {}
+
   vite@6.2.3(@types/node@22.13.14):
     dependencies:
       esbuild: 0.25.1
@@ -2656,6 +3156,14 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
+  wrap-ansi@6.2.0:
+    dependencies:
+      ansi-styles: 4.3.0
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+
   yallist@3.1.1: {}
 
   yocto-queue@0.1.0: {}
+
+  yoctocolors-cjs@2.1.2: {}

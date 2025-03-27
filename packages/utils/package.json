@@ -1,20 +1,22 @@
 {
-  "name": "@erueka/create",
-  "version": "0.0.2",
+  "name": "@erueka/utils",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@inquirer/prompts": "^7.4.0"
+    "axios": "^1.8.4",
+    "fs-extra": "^11.3.0",
+    "url-join": "^5.0.0"
   }
 }
