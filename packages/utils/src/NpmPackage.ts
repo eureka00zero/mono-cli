@@ -2,7 +2,7 @@ import fs from "node:fs";
 import fse from "fs-extra";
 // @ts-ignore
 import npminstall from "npminstall";
-import { getLatestVersion, getNpmRegistry } from "./versionutils.js";
+import { getLatestVersion, getNpmRegistry } from "./versionUtils.js";
 import path from "node:path";
 
 export interface NpmPackageOptions {

@@ -72,6 +72,9 @@ importers:
 
   packages/utils:
     dependencies:
+      '@types/fs-extra':
+        specifier: ^11.0.4
+        version: 11.0.4
       axios:
         specifier: ^1.8.4
         version: 1.8.4

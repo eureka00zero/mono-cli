@@ -1,6 +1,6 @@
 import { select, input, confirm } from "@inquirer/prompts";
 import os from "node:os";
-import { NpmPackage } from "@eureka/utils";
+import { NpmPackage } from "@erueka/utils";
 import path from "node:path";
 import ora from "ora";
 import fse from "fs-extra";
